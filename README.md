@@ -1,1 +1,1 @@
-# Bohdan.github.io
+# SKOLA
