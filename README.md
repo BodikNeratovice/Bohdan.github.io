@@ -1,1 +1,1 @@
-# SKOLA
+# BodikNeratovice.github.io
