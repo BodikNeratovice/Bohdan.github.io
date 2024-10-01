@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozcestník</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://wallpapercave.com/wp/wp5335654.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white; /* Pro lepší čitelnost textu */
+        }
+
+        #menu {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Poloprůhledné pozadí */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        .menu-item {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            display: inline-block;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .menu-item:hover {
+            background-color: #0056b3;
+        }
+
+        .menu-item:link, .menu-item:visited {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="menu">
+    <h1>Rozcestník</h1>
+    <a href="clicker.html" class="menu-item">Kliker</a>
+    <a href="https://duckduckgo.com/" target="_blank" class="menu-item">DUCKDUCKGO</a>
+    <a href="https://www.youtube.com" target="_blank" class="menu-item">YouTube</a>
+    <a href="pingpong.html" class="menu-item">PING PONG</a>
+    <a href="https://chatgpt.com/" class="menu-item">Chatgpt</a>
+    <a href="pozvanka.html" class="menu-item">pozvanka na svatbu</a>
+</div>
+
+</body>
+</html>

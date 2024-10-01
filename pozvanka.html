@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pozv·nka na svatbu</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: rgb(245, 245, 245); /* SvÏtl˝ öed˝ odstÌn */
+            color: rgb(50, 50, 50); /* TmavöÌ text pro lepöÌ kontrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+             background-image: url('https://honeydewfilms.com/wp-content/uploads/2019/04/Gay-Wedding-First-Dance.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white; /* Pro lep≈°√≠ ƒçitelnost textu */
+        }
+
+        .invitation {
+            background-color: rgb(255, 255, 255); /* BÌlÈ pozadÌ pro Ëist˝ vzhled */
+            border: 2px solid rgb(200, 200, 200); /* Jemn˝ okraj */
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            animation: colorChange 5s infinite; /* Animace pro h1 */
+        }
+
+        p, .names, .date, .location {
+            animation: colorChange 5s infinite; /* Animace pro vöechny textovÈ prvky */
+        }
+
+        .names {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .location {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .rsvp {
+            background-color: rgb(180, 20, 20); /* »ervenÈ tlaËÌtko pro odpovÏÔ */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            animation: colorChange 5s infinite; /* Animace barvy i pro tlaËÌtko */
+        }
+
+        .rsvp:hover {
+            background-color: rgb(150, 0, 0); /* ZmÏna barvy p¯i najetÌ myöÌ */
+        }
+
+        /* Definice animace */
+        @keyframes colorChange {
+            0% { color: rgb(180, 20, 20); } /* »erven· barva */
+            25% { color: rgb(20, 100, 200); } /* Modr· barva */
+            50% { color: rgb(50, 150, 50); } /* Zelen· barva */
+            75% { color: rgb(255, 165, 0); } /* Oranûov· barva */
+            100% { color: rgb(180, 20, 20); } /* ZpÏt na Ëervenou */
+        }
+    </style>
+</head>
+<body>
+
+<div class="invitation">
+    <h1>Pozvanka na svatbu</h1>
+    <p>Srdecne vas zveme na svatbu</p>
+    <div class="names">Vojta Zemanek &amp; Rudolf Kyndl</div>
+    <div class="date">Sobota, 12. cervna 2024</div>
+    <div class="location">Neratovice</div>
+    <p>Prosime o potvrzei ucasti do 30. kvetna 2024.</p>
+    <a href="mailto:zemanek.vojtech@sosasou.cz" class="rsvp">RSVP</a>
+</div>
+
+</body>
+</html>

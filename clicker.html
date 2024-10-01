@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jednoduchy Kliker</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://wallpapercave.com/wp/wp3006550.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #clicker-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        #score {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #click-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #click-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div id="clicker-container">
+    <h1>Jednoduchy Matejuv Kliker</h1>
+    <div id="score">0</div>
+    <button id="click-button" onclick="incrementScore()">Klikni na Mateje!</button>
+    <a href="https://youtu.be/NjD0H4eBfng?si=poS_77IlczjWkFdt&t=60"><img src="https://i.scdn.co/image/ab67616100005174ecddf4e9db3637257468860e" alt="Cernoch"></a>
+    </div>
+
+<script>
+    let score = 0;
+
+    function incrementScore() {
+        score++;
+        document.getElementById("score").textContent = score;
+    }
+</script>
+
+</body>
+</html>
